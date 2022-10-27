@@ -102,6 +102,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kQW-Lo-yzY"/>
+                    <connections>
+                        <outlet property="mailLabel" destination="bE1-Wi-s3Y" id="rri-2y-MCp"/>
+                        <outlet property="phoneNumberLabel" destination="Jtu-SI-0Ct" id="SJ7-t1-iWi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

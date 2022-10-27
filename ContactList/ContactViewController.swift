@@ -11,9 +11,14 @@ class ContactViewController: UIViewController {
     
     var contact: Person!
 
+    @IBOutlet var mailLabel: UILabel!
+    @IBOutlet var phoneNumberLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.title = contact.fullName
+        mailLabel.text = "Mail: \(contact.mail)"
+        phoneNumberLabel.text = "Phone: \(contact.numberPhone)"
     }
 
 

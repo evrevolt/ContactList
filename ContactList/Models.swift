@@ -22,7 +22,7 @@ struct Person {
             let person = Person(name: dataStore.names.randomElement() ?? "NoName",
                                 surname: dataStore.surname.randomElement() ?? "NoSurname",
                                 mail: dataStore.mails.randomElement() ?? "NoMail",
-                                numberPhone: dataStore.mails.randomElement() ?? "NoPhone")
+                                numberPhone: dataStore.mobilePhone.randomElement() ?? "NoPhone")
             persons.append(person)
         }
         return persons
