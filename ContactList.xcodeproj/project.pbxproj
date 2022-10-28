@@ -15,6 +15,7 @@
 		546F4028290AE596002B6025 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 546F4026290AE596002B6025 /* LaunchScreen.storyboard */; };
 		546F4030290AE61F002B6025 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F402F290AE61F002B6025 /* ContactListViewController.swift */; };
 		546F4032290AE67E002B6025 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546F4031290AE67E002B6025 /* Models.swift */; };
+		54E5A106290AFA2A00E4EBA9 /* DetailsContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E5A105290AFA2A00E4EBA9 /* DetailsContactsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		546F4029290AE596002B6025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546F402F290AE61F002B6025 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
 		546F4031290AE67E002B6025 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		54E5A105290AFA2A00E4EBA9 /* DetailsContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContactsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				546F401D290AE594002B6025 /* SceneDelegate.swift */,
 				546F401F290AE594002B6025 /* ContactViewController.swift */,
 				546F4021290AE594002B6025 /* Main.storyboard */,
+				54E5A105290AFA2A00E4EBA9 /* DetailsContactsViewController.swift */,
 				546F4031290AE67E002B6025 /* Models.swift */,
 				546F402F290AE61F002B6025 /* ContactListViewController.swift */,
 				546F4024290AE596002B6025 /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E5A106290AFA2A00E4EBA9 /* DetailsContactsViewController.swift in Sources */,
 				546F4020290AE594002B6025 /* ContactViewController.swift in Sources */,
 				546F4030290AE61F002B6025 /* ContactListViewController.swift in Sources */,
 				546F401C290AE594002B6025 /* AppDelegate.swift in Sources */,

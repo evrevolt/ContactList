@@ -54,17 +54,4 @@ class DataStore {
                  "+7-999-999-99-99",
                  "+7-977-777-77-77"
     ]
-    
 }
-
-//let dateStore = DataStore()
-//var persons = [Person]()
-
-//for _ in 1...10 {
-//    let person = Person(name: dateStore.names.randomElement() ?? "NoName",
-//                        surname: dateStore.surname.randomElement() ?? "NoSurname",
-//                        mail: dateStore.mails.randomElement() ?? "NoMail",
-//                        numberPhone: dateStore.mails.randomElement() ?? "NoPhone")
-//    persons.append(person)
-//}
-
