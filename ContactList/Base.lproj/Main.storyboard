@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pfm-cS-0ho">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pfm-cS-0ho">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -81,29 +81,13 @@
                             <outlet property="delegate" destination="K7r-Jc-dv5" id="gUi-hq-0iu"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="HN4-xJ-xpp"/>
                     <navigationItem key="navigationItem" title="Persons List" id="tXM-cU-HcI"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cQ-hF-jTb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1126" y="746"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="QyS-XS-1wJ">
-            <objects>
-                <navigationController id="fEy-k3-PQK" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="h4e-0e-YfZ"/>
-                    <navigationItem key="navigationItem" id="sSL-rF-W2T"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ked-FJ-TlP">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="K7r-Jc-dv5" kind="relationship" relationship="rootViewController" id="1xJ-FG-1yP"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kyu-Ak-et5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="240" y="746"/>
+            <point key="canvasLocation" x="240" y="747"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b2l-L4-Z3o">
@@ -174,12 +158,13 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="2zI-uV-JFD"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="m01-W2-JJM">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="Fo2-uQ-3rl" kind="relationship" relationship="viewControllers" id="Aon-W8-adh"/>
-                        <segue destination="fEy-k3-PQK" kind="relationship" relationship="viewControllers" id="YaF-qi-sHG"/>
+                        <segue destination="K7r-Jc-dv5" kind="relationship" relationship="viewControllers" id="en2-xv-hnL"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Azk-zG-pLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
