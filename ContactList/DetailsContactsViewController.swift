@@ -26,19 +26,6 @@ class DetailsContactsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         2
     }
-
-    //Настройка секции
-//    override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-//        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "someContactCell")
-//        var title = header?.defaultContentConfiguration()
-//        //title?.text = contacts[section].mail
-//
-//
-//        title?.text = "Section: \(section)"
-//        header?.contentConfiguration = title
-//
-//        return header
-//    }
     
     //Имя для секции
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -53,22 +40,19 @@ class DetailsContactsViewController: UITableViewController {
     //Настройка ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let firstCell = tableView.dequeueReusableCell(withIdentifier: "mailContactCell", for: indexPath)
-        let secondCell = tableView.dequeueReusableCell(withIdentifier: "phoneContactCell", for: indexPath)
-        
-        var firstContent = firstCell.defaultContentConfiguration()
-        var secondContent = secondCell.defaultContentConfiguration()
-        
-        firstContent.text = contacts[indexPath.section].mail
-        secondContent.text = contacts[indexPath.section].numberPhone
-        
-        firstCell.contentConfiguration = firstContent
-        secondCell.contentConfiguration = secondContent
-        
         if indexPath.row == 0 {
-            return firstCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "mailContactCell", for: indexPath)
+            var cellContext = cell.defaultContentConfiguration()
+            cellContext.text = contacts[indexPath.section].mail
+            cell.contentConfiguration = cellContext
+            return cell
         } else {
-            return secondCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "phoneContactCell", for: indexPath)
+            var cellContext = cell.defaultContentConfiguration()
+            cellContext.text = contacts[indexPath.section].numberPhone
+            cell.contentConfiguration = cellContext
+            return cell
         }
+        
     }
 }

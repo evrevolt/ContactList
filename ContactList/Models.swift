@@ -19,10 +19,12 @@ struct Person {
         let dataStore = DataStore()
         var persons = [Person]()
         for _ in 1...10 {
-            let person = Person(name: dataStore.names.randomElement() ?? "NoName",
+            let person = Person(
+                name: dataStore.names.randomElement() ?? "NoName",
                                 surname: dataStore.surname.randomElement() ?? "NoSurname",
                                 mail: dataStore.mails.randomElement() ?? "NoMail",
-                                numberPhone: dataStore.mobilePhone.randomElement() ?? "NoPhone")
+                                numberPhone: dataStore.mobilePhone.randomElement() ?? "NoPhone"
+            )
             persons.append(person)
         }
         return persons
