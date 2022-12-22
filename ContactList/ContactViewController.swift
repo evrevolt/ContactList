@@ -21,7 +21,5 @@ class ContactViewController: UIViewController {
         mailLabel.text = "Mail: \(contact.mail)"
         phoneNumberLabel.text = "Phone: \(contact.numberPhone)"
     }
-
-
 }
 
